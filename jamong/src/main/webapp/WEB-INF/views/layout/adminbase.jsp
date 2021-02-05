@@ -5,32 +5,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Focus Admin: Creative Admin Dashboard</title>
-    <!-- Standard -->
-    <link rel="shortcut icon" href="http://placehold.it/64.png/000/fff">
-    <!-- Retina iPad Touch Icon-->
-    <link rel="apple-touch-icon" sizes="144x144" href="http://placehold.it/144.png/000/fff">
-    <!-- Retina iPhone Touch Icon-->
-    <link rel="apple-touch-icon" sizes="114x114" href="http://placehold.it/114.png/000/fff">
-    <!-- Standard iPad Touch Icon-->
-    <link rel="apple-touch-icon" sizes="72x72" href="http://placehold.it/72.png/000/fff">
-    <!-- Standard iPhone Touch Icon-->
-    <link rel="apple-touch-icon" sizes="57x57" href="http://placehold.it/57.png/000/fff">
-    <!-- Styles -->
-    <link href="${pageContext.request.contextPath}/resources/assets/css/lib/calendar2/pignose.calendar.min.css" rel="stylesheet">
-    <link href="${pageContext.request.contextPath}/resources/assets/css/lib/chartist/chartist.min.css" rel="stylesheet">
-    <link href="${pageContext.request.contextPath}/resources/assets/css/lib/font-awesome.min.css" rel="stylesheet">
-    <link href="${pageContext.request.contextPath}/resources/assets/css/lib/themify-icons.css" rel="stylesheet">
-    <link href="${pageContext.request.contextPath}/resources/assets/css/lib/owl.carousel.min.css" rel="stylesheet" />
-    <link href="${pageContext.request.contextPath}/resources/assets/css/lib/owl.theme.default.min.css" rel="stylesheet" />
-    <link href="${pageContext.request.contextPath}/resources/assets/css/lib/weather-icons.css" rel="stylesheet" />
-    <link href="${pageContext.request.contextPath}/resources/assets/css/lib/menubar/sidebar.css" rel="stylesheet">
-    <link href="${pageContext.request.contextPath}/resources/assets/css/lib/bootstrap.min.css" rel="stylesheet">
-    <link href="${pageContext.request.contextPath}/resources/assets/css/lib/helper.css" rel="stylesheet">
-    <link href="${pageContext.request.contextPath}/resources/assets/css/style.css" rel="stylesheet">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>쟈몽 스토어</title>
+<!-- Standard -->
+<link rel="shortcut icon" href="http://placehold.it/64.png/000/fff">
+<!-- Retina iPad Touch Icon-->
+<link rel="apple-touch-icon" sizes="144x144"
+	href="http://placehold.it/144.png/000/fff">
+<!-- Retina iPhone Touch Icon-->
+<link rel="apple-touch-icon" sizes="114x114"
+	href="http://placehold.it/114.png/000/fff">
+<!-- Standard iPad Touch Icon-->
+<link rel="apple-touch-icon" sizes="72x72"
+	href="http://placehold.it/72.png/000/fff">
+<!-- Standard iPhone Touch Icon-->
+<link rel="apple-touch-icon" sizes="57x57"
+	href="http://placehold.it/57.png/000/fff">
+<!-- Styles -->
+<link
+	href="${pageContext.request.contextPath}/resources/assets/css/lib/calendar2/pignose.calendar.min.css"
+	rel="stylesheet">
+<link
+	href="${pageContext.request.contextPath}/resources/assets/css/lib/chartist/chartist.min.css"
+	rel="stylesheet">
+<link
+	href="${pageContext.request.contextPath}/resources/assets/css/lib/font-awesome.min.css"
+	rel="stylesheet">
+<link
+	href="${pageContext.request.contextPath}/resources/assets/css/lib/themify-icons.css"
+	rel="stylesheet">
+<link
+	href="${pageContext.request.contextPath}/resources/assets/css/lib/owl.carousel.min.css"
+	rel="stylesheet" />
+<link
+	href="${pageContext.request.contextPath}/resources/assets/css/lib/owl.theme.default.min.css"
+	rel="stylesheet" />
+<link
+	href="${pageContext.request.contextPath}/resources/assets/css/lib/weather-icons.css"
+	rel="stylesheet" />
+<link
+	href="${pageContext.request.contextPath}/resources/assets/css/lib/menubar/sidebar.css"
+	rel="stylesheet">
+<link
+	href="${pageContext.request.contextPath}/resources/assets/css/lib/bootstrap.min.css"
+	rel="stylesheet">
+<link
+	href="${pageContext.request.contextPath}/resources/assets/css/lib/helper.css"
+	rel="stylesheet">
+<link
+	href="${pageContext.request.contextPath}/resources/assets/css/style.css"
+	rel="stylesheet">
+
+<style>
+.dropdown-profile .badge {
+	top: auto;
+	bottom: auto;
+	left: auto;
+	right: 1.25rem;
+}
+
+.badge {
+	color: #fff;
+	height: 1.25rem;
+	width: 1.25rem;
+	line-height: 0.875rem;
+	position: absolute;
+	right: -2px;
+	top: -2px;
+}
+
+.user-img img {
+	height: 40px;
+	width: 40px;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	margin: 0;
+	padding: 0;
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.user-img .activity {
+	height: 13px;
+	width: 13px;
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+	border: 3px solid #fff;
+	bottom: .4rem;
+	right: 0rem;
+	padding: 0;
+	top: auto;
+	left: auto;
+}
+
+.user-img .activity {
+  background-color: blue; }
+</style>
 </head>
 <body>
 	<div
@@ -39,17 +111,12 @@
 			<div class="nano-content">
 				<ul>
 					<div class="logo">
-						<a href="index.html"> <!-- <img src="assets/images/logo.png" alt="" /> -->
-							<span>Focus</span></a>
+						<a href="admin"> <!-- <img src="assets/images/logo.png" alt="" /> -->
+							<span>쟈몽 스토어</span></a>
 					</div>
 					<li class="label">Main</li>
-					<li><a class="sidebar-sub-toggle"><i class="ti-home"></i>
-							Dashboard <span class="badge badge-primary">2</span> <span
-							class="sidebar-collapse-icon ti-angle-down"></span></a>
-						<ul>
-							<li><a href="index.html">Dashboard 1</a></li>
-							<li><a href="index1.html">Dashboard 2</a></li>
-						</ul></li>
+					<li><a href="admin"><i
+							class="ti-home"></i>대시보드</a></li>
 
 					<li class="label">Apps</li>
 					<li><a class="sidebar-sub-toggle"><i
@@ -65,11 +132,11 @@
 							<li><a href="chart-knob.html">Knob</a></li>
 						</ul></li>
 					<li><a href="app-event-calender.html"><i
-							class="ti-calendar"></i> Calender </a></li>
-					<li><a href="app-email.html"><i class="ti-email"></i>
-							Email</a></li>
+							class="ti-calendar"></i>일정관리</a></li>
+					<li><a href="aMsg"><i class="ti-email"></i>
+							쪽지</a></li>
 					<li><a href="app-profile.html"><i class="ti-user"></i>
-							Profile</a></li>
+							마이페이지</a></li>
 					<li><a href="app-widget-card.html"><i
 							class="ti-layout-grid2-alt"></i> Widget</a></li>
 					<li class="label">Features</li>
@@ -168,7 +235,8 @@
 					<div class="float-right">
 						<div class="dropdown dib">
 							<div class="header-icon" data-toggle="dropdown">
-								<i class="ti-bell"></i>
+								<i class="ti-bell"></i> <span
+									class="badge gradient-1 badge-pill badge-primary">3</span>
 								<div class="drop-down dropdown-menu dropdown-menu-right">
 									<div class="dropdown-content-heading">
 										<span class="text-left">Recent Notifications</span>
@@ -177,7 +245,7 @@
 										<ul>
 											<li><a href="#"> <img
 													class="pull-left m-r-10 avatar-img"
-													src="assets/images/avatar/3.jpg" alt="" />
+													src="${pageContext.request.contextPath}/resources/assets/images/avatar/3.jpg" />
 													<div class="notification-content">
 														<small class="notification-timestamp pull-right">02:34
 															PM</small>
@@ -188,7 +256,7 @@
 											</a></li>
 											<li><a href="#"> <img
 													class="pull-left m-r-10 avatar-img"
-													src="assets/images/avatar/3.jpg" alt="" />
+													src="${pageContext.request.contextPath}/resources/assets/images/avatar/3.jpg" />
 													<div class="notification-content">
 														<small class="notification-timestamp pull-right">02:34
 															PM</small>
@@ -198,7 +266,7 @@
 											</a></li>
 											<li><a href="#"> <img
 													class="pull-left m-r-10 avatar-img"
-													src="assets/images/avatar/3.jpg" alt="" />
+													src="${pageContext.request.contextPath}/resources/assets/images/avatar/3.jpg" />
 													<div class="notification-content">
 														<small class="notification-timestamp pull-right">02:34
 															PM</small>
@@ -209,7 +277,7 @@
 											</a></li>
 											<li><a href="#"> <img
 													class="pull-left m-r-10 avatar-img"
-													src="assets/images/avatar/3.jpg" alt="" />
+													src="${pageContext.request.contextPath}/resources/assets/images/avatar/3.jpg" />
 													<div class="notification-content">
 														<small class="notification-timestamp pull-right">02:34
 															PM</small>
@@ -228,6 +296,7 @@
 						<div class="dropdown dib">
 							<div class="header-icon" data-toggle="dropdown">
 								<i class="ti-email"></i>
+								 <span class="badge gradient-1 badge-pill badge-primary">3</span>
 								<div class="drop-down dropdown-menu dropdown-menu-right">
 									<div class="dropdown-content-heading">
 										<span class="text-left">2 New Messages</span> <a
@@ -238,7 +307,7 @@
 										<ul>
 											<li class="notification-unread"><a href="#"> <img
 													class="pull-left m-r-10 avatar-img"
-													src="assets/images/avatar/1.jpg" alt="" />
+													src="${pageContext.request.contextPath}/resources/assets/images/avatar/1.jpg" />
 													<div class="notification-content">
 														<small class="notification-timestamp pull-right">02:34
 															PM</small>
@@ -249,7 +318,7 @@
 											</a></li>
 											<li class="notification-unread"><a href="#"> <img
 													class="pull-left m-r-10 avatar-img"
-													src="assets/images/avatar/2.jpg" alt="" />
+													src="${pageContext.request.contextPath}/resources/assets/images/avatar/2.jpg" />
 													<div class="notification-content">
 														<small class="notification-timestamp pull-right">02:34
 															PM</small>
@@ -260,7 +329,7 @@
 											</a></li>
 											<li><a href="#"> <img
 													class="pull-left m-r-10 avatar-img"
-													src="assets/images/avatar/3.jpg" alt="" />
+													src="${pageContext.request.contextPath}/resources/assets/images/avatar/3.jpg" />
 													<div class="notification-content">
 														<small class="notification-timestamp pull-right">02:34
 															PM</small>
@@ -271,7 +340,7 @@
 											</a></li>
 											<li><a href="#"> <img
 													class="pull-left m-r-10 avatar-img"
-													src="assets/images/avatar/2.jpg" alt="" />
+													src="${pageContext.request.contextPath}/resources/assets/images/avatar/2.jpg" />
 													<div class="notification-content">
 														<small class="notification-timestamp pull-right">02:34
 															PM</small>
@@ -289,9 +358,12 @@
 						</div>
 						<div class="dropdown dib">
 							<div class="header-icon" data-toggle="dropdown">
-								<span class="user-avatar">John <i
-									class="ti-angle-down f-s-10"></i>
-								</span>
+								<div class="user-img c-pointer position-relative"
+									data-toggle="dropdown">
+									<span class="activity active"></span> <img
+										src="${pageContext.request.contextPath}/resources/assets/images/1.png"
+										height="40" width="40" alt="">
+								</div>
 								<div
 									class="drop-down dropdown-profile dropdown-menu dropdown-menu-right">
 									<div class="dropdown-content-heading">
@@ -331,32 +403,51 @@
 	</div>
 
 	<!-- jquery vendor -->
-	<script src="${pageContext.request.contextPath}/resources/assets/js/lib/jquery.min.js"></script>
-	<script src="${pageContext.request.contextPath}/resources/assets/js/lib/jquery.nanoscroller.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/assets/js/lib/jquery.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/assets/js/lib/jquery.nanoscroller.min.js"></script>
 	<!-- nano scroller -->
-	<script src="${pageContext.request.contextPath}/resources/assets/js/lib/menubar/sidebar.js"></script>
-	<script src="${pageContext.request.contextPath}/resources/assets/js/lib/preloader/pace.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/assets/js/lib/menubar/sidebar.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/assets/js/lib/preloader/pace.min.js"></script>
 	<!-- sidebar -->
 
-	<script src="${pageContext.request.contextPath}/resources/assets/js/lib/bootstrap.min.js"></script>
-	<script src="${pageContext.request.contextPath}/resources/assets/js/scripts.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/assets/js/lib/bootstrap.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/assets/js/scripts.js"></script>
 	<!-- bootstrap -->
 
-	<script src="${pageContext.request.contextPath}/resources/assets/js/lib/calendar-2/moment.latest.min.js"></script>
-	<script src="${pageContext.request.contextPath}/resources/assets/js/lib/calendar-2/pignose.calendar.min.js"></script>
-	<script src="${pageContext.request.contextPath}/resources/assets/js/lib/calendar-2/pignose.init.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/assets/js/lib/calendar-2/moment.latest.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/assets/js/lib/calendar-2/pignose.calendar.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/assets/js/lib/calendar-2/pignose.init.js"></script>
 
 
-	<script src="${pageContext.request.contextPath}/resources/assets/js/lib/weather/jquery.simpleWeather.min.js"></script>
-	<script src="${pageContext.request.contextPath}/resources/assets/js/lib/weather/weather-init.js"></script>
-	<script src="${pageContext.request.contextPath}/resources/assets/js/lib/circle-progress/circle-progress.min.js"></script>
-	<script src="${pageContext.request.contextPath}/resources/assets/js/lib/circle-progress/circle-progress-init.js"></script>
-	<script src="${pageContext.request.contextPath}/resources/assets/js/lib/chartist/chartist.min.js"></script>
-	<script src="${pageContext.request.contextPath}/resources/assets/js/lib/sparklinechart/jquery.sparkline.min.js"></script>
-	<script src="${pageContext.request.contextPath}/resources/assets/js/lib/sparklinechart/sparkline.init.js"></script>
-	<script src="${pageContext.request.contextPath}/resources/assets/js/lib/owl-carousel/owl.carousel.min.js"></script>
-	<script src="${pageContext.request.contextPath}/resources/assets/js/lib/owl-carousel/owl.carousel-init.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/assets/js/lib/weather/jquery.simpleWeather.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/assets/js/lib/weather/weather-init.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/assets/js/lib/circle-progress/circle-progress.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/assets/js/lib/circle-progress/circle-progress-init.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/assets/js/lib/chartist/chartist.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/assets/js/lib/sparklinechart/jquery.sparkline.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/assets/js/lib/sparklinechart/sparkline.init.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/assets/js/lib/owl-carousel/owl.carousel.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/assets/js/lib/owl-carousel/owl.carousel-init.js"></script>
 	<!-- scripit init-->
-	<script src="${pageContext.request.contextPath}/resources/assets/js/dashboard2.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/assets/js/dashboard2.js"></script>
 </body>
 </html>

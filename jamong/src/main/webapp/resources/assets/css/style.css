@@ -165,9 +165,9 @@
   transition: all 0.5s ease-in-out;
 }
 .badge {
-  padding: 5px 10px;
+  padding: 3px;
   font-weight: 400;
-  border-radius: 4px;
+  border-radius: 50%;
 }
 .badge-primary {
   background: #5873fe;
@@ -727,7 +727,7 @@ a.dt-button.active:not(.disabled) {
 }
 .header-icon {
   font-size: 18px;
-  padding: 12px 15px;
+  padding: 5px 10px;
   color: #252525;
   position: relative;
   transition: all 0.4s ease-in-out;

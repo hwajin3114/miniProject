@@ -1,4 +1,4 @@
-package co.jamong.controller;
+package co.jamong.admin.controller;
 
 import java.io.IOException;
 
@@ -9,16 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class HomeController {
+public class MessageController {
 
-	// 나중에 사용자 코드로 바꿔야함
-	@RequestMapping(value="/")
-	public ModelAndView test(HttpServletResponse response) throws IOException{
-		return new ModelAndView("home");
-	}
-
-	@RequestMapping(value="/admin")
+	@RequestMapping(value="/aMsg")
 	public ModelAndView admin(HttpServletResponse response) throws IOException{
-		return new ModelAndView("admin/dashboard");
+		return new ModelAndView("admin/message");
 	}
 }
